@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body {
+    background: #000;
+    color: #fff;
+    /*hero petterns permite crear diseños de patrones se copia y se pega el css */
+    /* Pattern from https://www.heropatterns.com/  este pattern se saco de internet solo se copia el link
+    para mejorar la opacidad vamos a wview toggle woe lo volvemos mas oscuro
+    donde dice fill opacity o.1 s e puede 0.2 y asi*/
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='105' viewBox='0 0 80 105'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='death-star' fill='%23540606' fill-opacity='0.0'%3E%3Cpath d='M20 10a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm15 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zM20 75a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zm30-65a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm0 65a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zM35 10a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zM5 45a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zm60 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.container-crypto {
+    width: 90%;
+    margin: auto;
+
+}
+
+.navegacion-crypto {
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+
+}
+
+.navegacion-crypto a {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 2px solid aqua;
+    font-size: 17px;
+}
+
+
+.navegacion-crypto h1 {
+    font-size: 17px;
+    padding-right: 10%;
+}
+
+hr {
+    margin: 10px 10px;
+}
+
+/*el margin top es para separar espacios , arriba abajo izquiera, derecha, en este caso el top  es  de arriba en este caso con la linea de hr separamos espacio*/
+
+.segundaseccion-crypto {
+    margin-top: 100px;
+    width: 100%;
+    height: 550px;
+    background: url('./imgs_crypto/cryptomilovat.jpeg') no-repeat center center/cover;
+    margin-bottom: 20px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+
+
+.btncrypto{
+    text-decoration: none;
+    cursor: pointer; 
+    display: inline-block;
+    border: 0;
+    font-weight:bold ;
+    padding: 2px 8px;
+    background: aqua;
+    color: black;
+    font-size: 15px;
+    border: 1px solid white;
+    
+}
+
+.btncrypto:hover{
+    opacity: .5;
+}
+
+.videos-section{
+    text-align: center;
+    padding:150px 10px;
+    display: grid;
+    grid-template-columns: 2fr 1fr ;
+    gap: 25px; ;
+    margin: 10px 0;
+
+}
+
+.videos-section iframe{
+    padding: 40px 10px;
+}
+
+
+.footer-milovat {
+    background: #2f3640;
+    color:gray;
+    font-size: 12px;
+    padding: 20px 0;
+    text-align:  center;
+    padding-bottom: 20px;
+}
+
+
+
+@media screen and (max-width :700px){
+
+    .videos-section {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width :500px){
+    .videos-section{
+        display: block;
+        width: 300px;
+    }
+}
+
+
+
+
+

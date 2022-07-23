@@ -1,0 +1,225 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.containerblockchine{
+    width: 90%;
+    margin: auto;
+}
+
+
+body{
+
+background: #000;
+color: #fff;
+/*hero petterns permite crear diseños de patrones se copia y se pega el css */
+/* Pattern from https://www.heropatterns.com/  este pattern se saco de internet solo se copia el link
+para mejorar la opacidad vamos a wview toggle woe lo volvemos mas oscuro
+donde dice fill opacity o.1 s e puede 0.2 y asi*/
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='105' viewBox='0 0 80 105'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='death-star' fill='%23540606' fill-opacity='0.1'%3E%3Cpath d='M20 10a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm15 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zM20 75a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zm30-65a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm0 65a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zM35 10a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zM5 45a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zm60 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+font-size: 26px;
+font-family: 'Oswald', sans-serif;
+margin: 0 auto;
+}
+
+.navegacionbloc{
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:60px ;
+    
+}
+.navegacionbloc a {
+    color:#fff; 
+    text-decoration: none;
+    border-bottom: 2px solid red;
+    font-size: 17px;
+}
+    
+
+.navegacionbloc h1 {
+    font-size: 17px;
+    padding-right: 10%;
+}
+
+/*en los hr , body, head no se ponen puntos ojo
+el hr es para la linea que separa '*/
+
+hr {
+    margin: 10px 10px;
+}
+
+/*en este caso ponemos nuestro texto en el centro con un ancho hacia abajo de lo que quieas*/
+
+.art1{
+   
+    text-align: center;
+    padding: 20px;
+}
+
+.art1 h1{
+
+    font-size: 60px;
+    padding: 150px;
+}
+
+ .video-bloc {
+    padding:10px;
+   
+}
+
+.art1 p{
+   
+   padding: 90px;
+    font-size: 20px;
+}
+
+.imgbloc h1 i {
+    padding: 60;
+}
+
+.paraque-sirve {
+    text-align: center;
+    padding: 110px;
+}
+
+/*el no-repeat center es para que asi la imagen sea grande se acople a nuestro formato o medidas sin perder calidad*/
+.paraque-sirve img {
+    width: 900px;
+    height: 500px;
+    padding: 5%;
+    background: no-repeat center center/cover;
+    
+
+}
+.paraque-sirve p {
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.examples {
+    text-align: center;
+    padding: 90px;
+    
+}
+
+.examples h1 {
+    padding: 40px;
+}
+
+.examples p {
+    font-size: 20px;
+    padding: 5%;
+}
+
+.video-bloc-dos {
+    padding: 100px 0px;
+}
+
+
+.footer {
+    background: #2f3640;
+    color:gray;
+    font-size: 12px;
+    padding: 20px 0;
+    padding-bottom: 10px;
+
+
+}
+
+.footer a {
+    color: gray;
+    
+}
+
+
+
+@media  screen and (max-width :700px){
+    /*body{
+        background: blue;
+    }*/
+
+ 
+
+   .art1 .video-bloc iframe,
+   .video-bloc-dos iframe {
+    width: 300px;
+    height: 300px;
+  
+    
+    
+   }
+
+   .paraque-sirve img{
+    width: 310px;
+    height: 300px;
+   }
+
+    .paraque-sirve iframe {
+        width: 300px;
+        height: 300px;
+    }
+    
+
+}
+
+
+
+
+@media  screen and (max-width :500px){
+    /*body{
+        background:gray;
+    }*/
+
+    .art1 h1 {
+        padding: 20px;
+        
+    }
+
+   .art1 .video-bloc iframe {
+    width: 200px;
+    height: 200px;
+  
+    
+    
+   }
+ 
+
+    .paraque-sirve img {
+        width: 200px;
+        height: 200px;
+    }
+    .paraque-sirve iframe{
+        width: 200px;
+        height: 200px;
+    }
+    
+
+    .video-bloc-dos iframe {
+        width: 200px;
+        height: 200px;
+    }
+    
+
+}
+
+
+@media  screen and (max-width :320px){
+    body p{
+        width: 200px;
+        
+    }
+}
+
+
+
+
+
+
+
+

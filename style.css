@@ -1,0 +1,414 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #000;
+    color: #fff;
+
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='105' viewBox='0 0 80 105'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='death-star' fill='%23540606' fill-opacity='0.1'%3E%3Cpath d='M20 10a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm15 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zM20 75a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zm30-65a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm0 65a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zM35 10a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zM5 45a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zm60 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+a{
+    /*color text*/
+    color: #fff; 
+    text-decoration: none;   
+   
+
+}
+
+ul{
+    list-style:none;
+}
+
+
+
+.container{
+    width: 90%;
+    margin: auto;
+
+}
+
+
+
+.nav-main{
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:60px ;
+    padding: 20px 0;
+
+}
+
+/*en este caso llamamos a nuestra etiqueta nav-brand que es el logo para modificarlo de tamaño*/
+
+.nav-brand{
+    width: 85px;
+    height: 70px;
+    
+}
+
+/*esta es la navegacion isquierda nav left y a cada elemento ul le pondremos padding
+para separarlo y que este al lado del logotipo mira el siguiente ejemplo*/
+
+.nav-main ul{
+    display: flex;
+}
+
+
+
+.nav-main ul li{
+
+    padding : 10px;
+}
+
+
+
+
+.nav-main ul li a:hover{
+    border-bottom: 2px solid whitesmoke;
+
+}
+
+
+.nav-main ul li a{
+    padding: 6px;
+}
+
+
+
+
+
+
+
+
+.menu-btn {
+    position: absolute;
+    cursor: pointer;
+    top: 15px;
+    right: 30px;
+    z-index: 2;
+    font-size: 1.5rem;
+    display: none;
+    
+
+}
+
+
+
+
+
+
+hr{
+    margin: 20px 0px;
+}
+
+
+
+
+
+
+
+
+
+.segundaseccion{
+    width:100%;
+    height: 550px; ;
+    background: url('./img/astronaut.jpg') no-repeat center center/cover;
+    margin-bottom: 20px;
+
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+
+.btn{
+   cursor: pointer; 
+   display: inline-block;
+   border: 0;
+   font-weight:bold ;
+   padding: 10px 20px;
+   background: aqua;
+   color: white;
+   font-size: 15px;
+   border: 1px solid white;
+   
+}
+
+
+.btn:hover{
+    opacity: .7;
+}
+
+
+
+.news-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 25px; ;
+    margin: 10px 0;
+
+}
+
+
+
+
+.news-section img{
+    width: 100%;
+    height: 180px;
+}
+
+/*vamos a mejorar los h3*/
+
+.news-section h3{
+    font-size: 20px;
+    margin: 10x 0;
+    color: aqua;
+
+}
+
+
+
+.news-section a{
+    padding: 10px 0;
+    color: #f2f2f2;
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: bold;
+
+
+}
+
+.news-section a{
+    color: aqua;
+}
+
+
+
+
+
+ .news-section a:hover{
+     text-decoration: underline;
+     padding: 6px;
+     
+ }
+ .news-section a:hover{
+     padding: 6px;
+ }
+
+
+
+  .news-barner-one{
+      width: 100%;
+      height: 350px;
+      background: url(./img/world_blocha.jpg) no-repeat center/cover;
+      margin-bottom: 40px;
+
+  }
+
+  /*vamos a ubicar el contenido de abajo y modificar el div clas content*/
+
+  .news-barner-one .content{
+    width: 40%;
+    padding:90px 0 0 30px ;
+    color: #f2f2f2;
+  }
+
+  /*ahora vamos a separar  los parrafos*/
+
+  .news-barner-one p,
+  .news-barner-one h2 {
+    margin: 10px 0 20px 0;
+  }
+
+  .news-barner-one a {
+    color: black;
+  }
+  
+  
+
+
+
+
+
+.redessociales{
+    margin: 50px;
+    padding: 80px 0px;
+
+}
+
+.redessociales p{
+    padding: 30px;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.links a{
+    margin: 0 30px;
+}
+
+.links a i {
+    font-size: 3rem ;
+
+}
+
+/*En este caso vamos a modificar el footer links, daniel y cristian*/
+
+.footer-links{
+    background: #2f3640;
+    color: #616161;
+    font-size: 20px;
+    padding: 30px 0;
+
+}
+
+
+
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) ;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+
+/*modificaremos las listas ul pondremos las columnas en orden*/
+
+.footer-container ul{
+    margin: 0 auto;
+   
+}
+
+
+
+
+
+
+
+.derechos_autor{
+    background: #2f3640;
+    color:gray;
+    font-size: 12px;
+    padding: 20px 0;
+    text-align:  center;
+    padding-bottom: 20px;
+
+}
+
+
+
+@media(max-width :700px){
+
+    .menu-btn{
+        display: block;
+    }
+    
+
+    .nav-main ul.nav-menu {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #2f3640;
+        height: 99%;
+        padding: 30px;
+        opacity: .9;
+        transition: transform .5s ease-in-out;
+        transform:translate(-400px)
+
+    }
+
+    
+
+    .nav-main ul.nav-menu.show {
+        transform: translate(-20px);
+
+    }
+
+    /*distancia entre la lupa y el icono del menu*/
+
+    .nav-main ul.nav-menu-right{
+        margin-right: 40px;
+
+    }
+
+    .news-section {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    /*en este caso modificaremos el banner one con su propiedad .content*/
+
+    .news-barner-one .content,
+    .news-barner-two .content{
+        width: 80%;
+    }
+  
+
+    
+}
+
+
+
+@media(max-width :500px){
+    body {background: blue;}
+    .news-section {
+        grid-template-columns:1fr ;
+    }
+
+    .news-section img{
+        height: 250px;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

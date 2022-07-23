@@ -1,0 +1,326 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+
+    background: #000;
+    color: #fff;
+    /*hero petterns permite crear diseños de patrones se copia y se pega el css */
+    /* Pattern from https://www.heropatterns.com/  este pattern se saco de internet solo se copia el link
+    para mejorar la opacidad vamos a wview toggle woe lo volvemos mas oscuro
+    donde dice fill opacity o.1 s e puede 0.2 y asi*/
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='105' viewBox='0 0 80 105'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='death-star' fill='%23540606' fill-opacity='0.1'%3E%3Cpath d='M20 10a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm15 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zM20 75a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zm30-65a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm0 65a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zM35 10a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zM5 45a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zm60 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    font-size: 26px;
+    font-family: 'Oswald', sans-serif;
+    margin: 0 auto;
+}
+
+.containernft{
+    width: 90%;
+    margin: auto;
+
+}
+
+.navegacion-nft{
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:60px ;
+    
+}
+
+.navegacion-nft a {
+    color:#fff; 
+    text-decoration: none;
+    border-bottom: 2px solid #ffe618;
+    font-size: 17px;
+}
+
+hr{
+    margin: 20px 10px;
+}
+
+.navegacion-nft h1 {
+    font-size: 30px;
+    padding-right: 10%;
+}
+
+/*en este caso hago el efecto de moversen casi saltando , las palabras cripto y rareble*/
+
+.rarible{
+    text-shadow: #000;
+    font-family :Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+    color: #ffe618;
+    padding: 20px 0;
+    animation : saltar 12s infinite ;
+    animation-timing-function: ease-in;
+    
+    transform: translateY(0);
+    display:inline-block,
+}
+
+/*en este caso hago el efecto de moversen casi saltando , las palabras cripto y rareble*/
+
+
+
+.crypto{
+    font-family:Impact, fantasy;
+   display: flex;
+    font-size: 40px;
+    color: whitesmoke;
+    animation: saltar-dos 14s infinite;
+    animation-timing-function: ease-in;
+    transform: translateY(0);
+   
+    
+}
+
+
+/*en este caso hago el efecto de moversen casi saltando , las palabras cripto y rareble*/
+
+@keyframes saltar-dos{
+    from{
+        transform:translateY(0)
+
+    }
+    to{
+        transform: translateY(100px);
+
+    }
+
+}
+/*en este caso hago el efecto de moversen casi saltando , las palabras cripto y rareble*/
+
+
+
+@keyframes saltar{
+    from{
+        transform:translateY(0)
+
+    }
+    to{
+        transform: translateY(100px);
+
+    }
+
+}
+
+
+
+.nfts-section{
+    text-align: center;
+    padding:150px 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px; ;
+    margin: 10px 0;
+    
+
+}
+
+.nfts-section img{
+    width: 390px;
+}
+
+.nfts-section h3{
+    font-size: 20px;
+    margin: 10x 0;
+    color: #ffe618;
+    
+}
+
+.nfts-section a{
+    padding: 20px 0;
+    color: #ffe618;
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: bold;
+
+
+}
+
+.nfts-section p{
+    font-size: 20px;
+    
+}
+
+.nfts-section a:hover{
+    text-decoration: underline;
+    padding: 6px;
+    
+}
+.nfts-section a:hover{
+    padding: 6px;
+}
+
+
+.navegacion-nft-dos h1 {
+    font-size: 40px;
+    padding-right: 10%;
+}
+
+.nfts-section-dos{
+    text-align: center;
+    padding:0px 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px; ;
+    margin: 10px 0;
+    
+
+}
+
+.nfts-section-dos img{
+    width: 390px;
+}
+
+.nfts-section-dos h3{
+    font-size: 20px;
+    margin: 10x 0;
+    color: #ffe618;
+    
+}
+
+.nfts-section-dos a{
+    padding: 10px 0;
+    color: #ffe618;
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: bold;
+
+
+}
+
+.nfts-section-dos p {
+    font-size: 20px;
+}
+
+.nfts-section-dos a:hover{
+    text-decoration: underline;
+    padding: 6px;
+    
+}
+.nfts-section-dos a:hover{
+    padding: 6px;
+}
+
+
+
+
+/*Section three*/
+
+.nfts-section-tres{
+    padding: 200px 0px;
+}
+
+.navegacion-nft-tres h1 {
+    font-size: 40px;
+    padding-right: 10%;
+}
+
+.nfts-section-tres{
+    text-align: center;
+    padding:120px 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px; ;
+    margin: 10px 0;
+    
+
+}
+
+.nfts-section-tres img{
+    width: 390px;
+}
+
+.nfts-section-tres h3{
+    font-size: 20px;
+    margin: 10x 0;
+    color: #ffe618;
+    
+}
+
+.nfts-section-tres a{
+    padding: 10px 0;
+    color: #ffe618;
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: bold;
+
+
+}
+
+.nfts-section-tres p {
+    font-size: 20px;
+}
+
+.nfts-section-tres a:hover{
+    text-decoration: underline;
+    padding: 6px;
+    
+}
+.nfts-section-tres a:hover{
+    padding: 6px;
+}
+
+
+
+
+@media screen and (max-width :700px){
+
+    .nfts-section {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .nfts-section-dos{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .nfts-section-tres{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+
+@media screen and (max-width :415px){
+
+    .nfts-section {
+        width: auto;
+    }
+
+    .nfts-section-dos{
+        width: auto;
+    }
+
+    .nfts-section-tres{
+       width: auto;
+    }
+
+   
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,66 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+
+    background: #000;
+    color: #fff;
+    /*hero petterns permite crear diseños de patrones se copia y se pega el css */
+    /* Pattern from https://www.heropatterns.com/  este pattern se saco de internet solo se copia el link
+    para mejorar la opacidad vamos a wview toggle woe lo volvemos mas oscuro
+    donde dice fill opacity o.1 s e puede 0.2 y asi*/
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='105' viewBox='0 0 80 105'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='death-star' fill='%23540606' fill-opacity='0.1'%3E%3Cpath d='M20 10a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm15 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zM20 75a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zm30-65a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm0 65a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zM35 10a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zM5 45a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zm60 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    font-size: 26px;
+    font-family: 'Oswald', sans-serif;
+    margin: 0 auto;
+}
+
+.container-games{
+    width: 90%;
+    margin: auto;
+
+}
+
+.nav-games{
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:60px ;
+    
+}
+
+.nav-games h1{
+    color: whitesmoke;
+}
+
+.nav-games a {
+    color:#fff; 
+    text-decoration: none;
+    border-bottom: 2px solid #13263e;
+    font-size: 17px;
+}
+
+
+.container-games hr{
+   border-color: whitesmoke;
+    margin: 20px 10px;
+    
+}
+
+.marquesina  h1{
+    text-align: center;
+    color: #13263e;
+}
+.marquesina p{
+    text-align: center;
+}
+
+
+
+
+
+
