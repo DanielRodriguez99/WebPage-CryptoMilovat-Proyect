@@ -3,3 +3,5 @@ Creacion y practica con de Web Page Crypto Milovat Relacionado con el tema de Nf
 html , Css, JavaScript, ScrollReveal
 
 ![](https://github.com/DanielRodriguez99/WebPage-CryptoMilovat-Proyect/blob/main/Captura%20de%20pantalla%20(77).png)
+
+![](https://github.com/DanielRodriguez99/WebPage-CryptoMilovat-Proyect/blob/main/Captura%20de%20pantalla%20(73).png)
